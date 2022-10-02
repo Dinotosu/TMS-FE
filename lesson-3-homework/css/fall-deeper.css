@@ -1,0 +1,63 @@
+.fall-deeper {
+   background-color: #F0EFEB;
+   max-width: 1170px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 545px 544px; 
+   
+}
+
+.container {
+   box-sizing: border-box;
+}
+
+.fall-deeper__text-and-button {
+   display: block;
+   max-width: 544px;
+   margin-left: 80px;
+   padding: 90px 0;
+   grid-column: 1;
+}
+
+.fall-deeper__title {
+   display: flex;
+   max-width: 534px;
+   font-size: 60px;
+   font-family: 'Raleway 700';
+}
+
+.fall-deeper__subtitle {
+   display: flex;
+   max-width: 481px;
+   font-size: 24px;
+   font-family: 'Raleway 400';
+}
+
+.fall-deeper__button {
+   display: flex;
+}
+
+.fall-deeper__button button{
+   display: flex;
+   background-color: black;
+   color:rgb(255, 255, 255);
+   font-family: 'Raleway 400';
+   font-size: 17px;
+   border-radius: 100px;
+   border: none;
+}
+
+.fall-deeper__button button p {
+   padding: 8px 23px;
+}
+
+.fall-deeper__image {
+   display: inline-block;
+   grid-column: 2;
+   justify-content: end;
+}
+
+.fall-deeper__image img {
+
+   max-width: 500px;
+}

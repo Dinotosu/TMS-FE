@@ -1,0 +1,88 @@
+.best-sellers {
+   display: block;
+}
+
+.container {
+}
+
+.our-guides {
+   display: block;
+   
+}
+
+.our-guides__title {
+   display: block;
+   font-size: 36px;
+   font-family: 'Raleway 700';
+   max-width: 692px;
+   margin: 0 auto;
+   margin-top: 60px;
+}
+
+.our-guedes__subtitle {
+   display: block;
+   margin-top: 27px;
+   font-size: 20px;
+   font-family: 'Raleway 400';
+   max-width: 632px;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 27px;
+
+}
+.our-guides__amazon-sale-text {
+   display: flex;
+   font-size: 20px;
+   max-width: 371px;
+   margin: 44px auto;
+   font-family: 'Raleway 400';
+}
+.best-sellers__title {
+   display: flex;
+   margin-top: 88px;
+   font-family: 'Raleway 700';
+   font-size: 36px;
+   justify-content: center;
+}
+.best-sellers-wrap {
+   display: flex;
+
+}
+.best-sellers-card {
+   display: block;
+   max-width: 309px;
+   justify-content: center;
+   margin: 52px auto;
+}
+.best-sellers-card__img {
+   display: flex;
+}
+.best-sellers-card__title {
+   display: flex;
+   font-size: 17px;
+   font-family: 'Raleway 700';
+   max-width: 150px;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 27px;
+}
+.best-sellers-card__price {
+   display: flex;
+   font-size: 17px;
+   font-family: 'Raleway 400';
+   max-width: 72px;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 17px;
+}
+.link-button {
+   display: flex;
+   border: none;
+   font-size: 17px;
+   font-family: 'Raleway 400';
+   background-color: white;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 10px;
+   text-decoration: underline;
+}
