@@ -1,13 +1,13 @@
 .container {
    display: block;
    max-width: 1170px;
-   padding: 15px;
    background: #F5F5F5;
    margin: 0 auto;
+   padding: 60px 15px;
 }
+
 .pricing-options__title {
    display: flex;
-   max-width: 1170px;
    align-items: center;
    justify-content: center;
    line-height: 42px;
@@ -35,7 +35,7 @@
    justify-content: center;
 }
 
-.pricing-options__subtitle p {
+.pricing-options__subtitle {
    font-size: 18px;
    font-family: 'Raleway';
    font-weight: 400;
@@ -45,23 +45,20 @@
 
 .pricing-options-cards {
    display: flex;
-   padding: 60px 0;
-   max-width: 1170px;
    justify-content: center;
    gap: 30px;
+   margin-top: 60px;
 }
 
 .pricing-options-card {
    display: block;
    width: 370px;
+   margin-top: 20px;
 }
 
-.pricing-options-card:nth-child(1) {
-   margin-top: 20px;  
-}
-
-.pricing-options-card:nth-child(3) {
-   margin-top: 20px;  
+.pricing-options-card:active {
+   transform: translateY(-30px);
+   box-shadow: #333;
 }
 
 .pricing-options-card__black-box {

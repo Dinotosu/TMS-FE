@@ -1,8 +1,11 @@
-.fotter-container {
-   max-width: 1170px;
-   background-color: black;
+.footer-container {
    margin: 0 auto;
 }
+
+.footer {
+   background-color: black;
+}
+
 .footer-icons {
    padding-top: 40px;
    display: flex;
@@ -29,7 +32,7 @@
 .footer-sign {
    display: flex;
    justify-content: center;
-   padding-top: 32px;
+   margin-top: 32px;
    padding-bottom: 27px;
    font-size: 18px;
    font-family: 'Raleway';
