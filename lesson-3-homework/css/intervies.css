@@ -1,0 +1,71 @@
+.intervies {
+  padding: 50px 0;
+  position: relative;
+}
+.container {
+}
+.itervies__title {
+  font-size: 36px;
+  font-family: "Raleway 700";
+  max-width: 705px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intervies-cards {
+  margin-top: 102px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intervies-card {
+  width: 30%;
+}
+
+.intervies-card__image {
+  max-width: 288px;
+  margin-bottom: 35px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intervies-card__image img {
+  width: 100%;
+}
+
+.intervies-card__title {
+  font-size: 22px;
+  font-family: "Raleway 700";
+  max-width: 248px;
+  text-align: center;
+  margin: 0 auto;
+}
+.intervies-card__info {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 19px;
+  font-family: "Raleway 400";
+  max-width: 251px;
+  margin-top: 40px;
+  margin-bottom: 44px;
+}
+.intervies-card__info-name {
+}
+.intervies-card__info-location {
+}
+
+.intervies-card .link-button {
+  margin: 0 auto;
+}
+
+.intervies::after {
+  content: "";
+  position: absolute;
+  height: 480px;
+  background-color: #f0f0f0;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+}
