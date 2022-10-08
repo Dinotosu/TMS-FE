@@ -1,0 +1,77 @@
+.collections {
+   height: 620px;
+}
+
+.container {
+}
+
+.collections__background img{
+   overflow: hidden;
+   position: absolute;
+   top: 60px;
+   left: 0;
+   right: 0;
+   z-index: -1;
+   margin: 0 auto;
+   width: 1200px;
+}
+
+.collections-info {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+/*    flex-wrap: wrap; */
+   max-width: 669px;
+   position: relative;
+   top: 380px;
+   left: 54px;
+}
+
+.collections-info__title {
+   font-family: 'Roboto 700';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 63px;
+   letter-spacing: 0.5px;
+   color: #FFFFFF;
+   display: flex;
+}
+
+.collections-info__subtitle {
+   display: flex;
+   font-family: 'Roboto 700';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.5px;
+   color: #FFFFFF;
+   margin-top: 11px;
+}
+
+.collections-info__buttons {
+   display: flex;
+   margin-top: 24px;
+   gap: 24px;
+}
+
+.collections-info__button {
+   padding: 17px 46px;
+   color: #212a2f;
+   background-color: #FFFFFF;
+   border: #FFFFFF;
+   border-radius: 2px ;
+   font-family: 'Roboto 700';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 13px;
+   text-align: center;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+.collections-info__button:hover {
+   background-color: #b3b3b3;
+}
