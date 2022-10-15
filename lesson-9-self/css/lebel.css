@@ -1,0 +1,47 @@
+.div-lebel {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  font-size: large;
+  position: relative;
+}
+
+.div-lebel input {
+  display: none;
+}
+
+.div-lebel label {
+  line-height: 15px;
+  padding-left: 15px;
+}
+
+label#check1::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(63, 63, 63);
+  border-radius: 20%;
+  left: 0;
+  top: 5px;
+}
+
+label#check1::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 6.5px;
+  height: 4px;
+  border: 1px solid rgb(63, 63, 63);
+  border-top: none;
+  border-right: none;
+  left: 2px;
+  top: 7px;
+  transform:rotate(-45deg);
+  transition: 0.5s;
+}
+
+input:checked ~ #check1::after{
+  display: block;
+}
+

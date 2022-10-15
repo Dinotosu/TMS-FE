@@ -1,69 +1,212 @@
-.favorites {
+.favorite {
+  padding: 120px 0;
 }
 .container {
 }
+
 .favorites__title {
-   display: flex;
-   width: 100%;
-   justify-content: center;
-   padding-top: 119px;
-   font-family: 'Roboto 700';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 32px;
-   line-height: 42px;
-   text-align: center;
-   letter-spacing: 0.5px;
-   color: #212A2F;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "Roboto 700";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #212a2f;
 }
-.favorites-carousel {
-   display: flex;
-   width: 565px;
-   margin: 0 auto;
-   justify-content: space-around;
+
+.favorites-tabs {
+  display: flex;
+  width: 565px;
+  margin: 0 auto;
+  margin-top: 32px;
+  justify-content: space-around;
+  position: relative;
 }
+
+.favorites-tabs label {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #212a2f;
+}
+
+.tab {
+  width: 100px;
+  padding: 20px;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.tab:checked {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+input:checked + .tab {
+  border-bottom: 2px solid #38393a;
+  border-style: ridge;
+  background-color: white;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:nth-child(1):checked ~ .tab-content:nth-of-type(1) {
+  display: flex;
+}
+
+input[type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2) {
+  display: flex;
+}
+
+input[type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
+  display: flex;
+}
+
+.favorites-tab {
+  display: flex;
+}
+
+.favorites-tabs:after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background-color: #aaaaaa;
+  position: absolute;
+  top: 45px;
+  z-index: -1;
+}
+
 .favorites-carousel__name {
-   display: flex;
-   margin-top: 32px;
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 24px;
-   text-align: center;
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   color: #212A2F;
+  display: flex;
+  margin-top: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #212a2f;
 }
+
+.favorites-carousel__name:first-of-type(::after) {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background-color: #212a2f;
+  position: relative;
+}
+
 .favorites-cards {
-   padding-top: 34px;
-   margin: 0 auto;
-   display: flex;
-   justify-content: space-around;
-   gap: 24px;
+  padding-top: 34px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 .favorites-card {
-   max-width: 30%;
-   display: flex;
-   flex-direction: column;
-}
-.favorites-card__buttons:hover {
-   display: flex;
-}
-.favorites-card__button {
-   display: flex;
-   padding: 16px 93px;
-
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
 }
 
-.favorites-card__image img{
-   width: 100%;
+.favorites-card-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  /*   background-image: url(../images/Everyday_boots.png); */
 }
+
+.favorites-card__image {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0%;
+}
+
+.favorites {
+  flex-direction: column;
+  width: 100%;
+}
+
+.favorites__button {
+  margin: 0 auto;
+}
+
+.favorites-card__image img {
+  width: 100%;
+  height: 100%;
+}
+
 .favorites-card__info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 17px;
 }
+
+.favorites-card__info div,span {
+  margin-top: 11px;
+}
+
+.favorites-card__info:not(.favorites-card__info-title) {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
 .favorites-card__info-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d3d4d5;
 }
+
 .favorites-card__info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
+
+i.fa-solid.fa-cloud::before{
+  width: 30px;
+  height: 30px;
+}
+
 .favorites-card__info-tag {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #212a2f;
+  margin-left: 12px;
 }
