@@ -1,0 +1,71 @@
+.carousel {
+  padding: 50px 0;
+}
+.container {
+}
+.carousel__title {
+  font-family: "Roboto 700";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.5px;
+  color: #212a2f;
+  padding-left: 28px;
+}
+
+.section-between-info__subtext {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.carousel-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  min-width: 300px;
+}
+.carousel-card__image img {
+  width: 100%;
+}
+.carusel-card-info {
+  width: 95%;
+  margin: 0 auto;
+}
+.carusel-card-info__title {
+  font-size: 22px;
+  line-height: 29px;
+  margin-top: 17px;
+    font-family: "Roboto 700";
+}
+.carusel-card-info__subtext {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1170px) {
+  .carousel-card {
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .carousel-cards {
+  gap: 24px;
+}
+}

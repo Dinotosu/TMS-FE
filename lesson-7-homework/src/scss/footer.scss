@@ -1,0 +1,129 @@
+.footer {
+  background-color: #212a2f;
+  color: #ffffff;
+  padding: 80px 0;
+}
+.container {
+}
+
+.footer-lists {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-list {
+  width: 27%;
+  min-width: 120px;
+  padding: 0 10px;
+}
+
+.footer-list-content__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-list-content {
+  margin-top: 21px;
+}
+
+.footer-list-content__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.footer-list-content__item {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.footer-list-content__item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-info {
+  display: flex;
+  margin-top: 85px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-info-tagline {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  width: 20%;
+}
+
+.footer-info-tagline__text {
+  margin-top: 21px;
+}
+
+.footer-info-flags {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 195px;
+}
+
+.footer-info__flag {
+  display: flex;
+  width: 37px;
+}
+
+.footer-info__flag:first-of-type {
+  margin-right: 24px;
+}
+
+.footer-info__flag img {
+  width: 100%;
+}
+
+.footer-tag {
+  display: flex;
+  padding-top: 126px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-tag {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .footer-lists {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-info-flags {
+    padding: 0;
+  }
+  .footer-info-tagline {
+    width: 50%;
+  }
+}

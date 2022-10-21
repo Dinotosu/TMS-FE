@@ -1,4 +1,5 @@
 .intervies {
+  display: flex;
   padding: 50px 0;
   position: relative;
 }
@@ -15,19 +16,19 @@
 .intervies-cards {
   margin-top: 102px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .intervies-card {
-  width: 30%;
+  width: calc((100% - 40px) / 3);
 }
 
 .intervies-card__image {
   max-width: 288px;
   margin-bottom: 35px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .intervies-card__image img {
@@ -68,4 +69,30 @@
   width: 100%;
   z-index: -1;
   bottom: 0;
+}
+
+@media (max-width: 750px) {
+  .intervies-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intervies-card {
+    width: 80%;
+    align-items: center;
+  }
+  .intervies-card__image {
+    width: calc(60% - 40px);
+    margin: 0 auto;
+  }
+  .intervies-card__title {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .itervies__title {
+    width: 100%;
+    font-size: 28px;
+  }
+  .intervies::after {
+    display: none;
+  }
 }

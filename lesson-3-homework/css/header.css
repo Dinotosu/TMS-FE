@@ -68,4 +68,9 @@
    width: 100%;
 }
 
+@media (max-width: 550px) {
+   .navigation {
+      display: none;
+   }
+}
 

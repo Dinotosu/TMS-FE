@@ -1,0 +1,72 @@
+.form {
+  padding: 50px 0;
+}
+.container {
+}
+.form-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-text .carousel__title {
+    padding: 0;
+}
+
+.form-text__subtext {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #212a2f;
+  width: 70%;
+}
+
+.form-text-link {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.form-text-link-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-text-link-form input {
+  width: 50%;
+  min-width: 250px;
+  height: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.22 );
+  border: none;
+  border-bottom: 2px solid #212a2f;
+  padding-left: 100px;
+}
+
+.form-text-link-form button {
+  width: 111px;
+  margin-left: 12px;
+}
+
+.form-privacy {
+  display: flex;
+  margin-top: 24px;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #74797c;
+  text-align: center;
+  margin-top: 24px;
+}

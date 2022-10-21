@@ -1,0 +1,61 @@
+.buttons {
+  display: flex;
+  margin-top: 24px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: flex;
+  width: 180px;
+  height: 48px;
+  color: #212a2f;
+  background-color: #ffffff;
+  border: #ffffff;
+  border-radius: 2px;
+  font-family: "Roboto 700";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorites-card-top .button {
+  margin: 0 auto;
+}
+
+.button--blk {
+  background-color: #212a2f;
+  color: #ffffff;
+}
+
+.section-between-info .buttons {
+  justify-content: center;
+}
+
+.button--long {
+    width: 384px;
+
+}
+
+
+.button:hover {
+  background-color: #b3b3b3;
+  color: #e7e9ea;
+}
+
+@media (max-width: 1170px) {
+  .buttons {
+    justify-content: center;
+  }
+   .form-text-link-form .button {
+    margin-top: 24px;
+  }
+  
+}
