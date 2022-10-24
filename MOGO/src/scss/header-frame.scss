@@ -1,0 +1,36 @@
+.header-frame {
+  color: #fff;
+  .header__background {
+    width: 100%;
+    position: relative;
+    img:first-of-type {
+      position: absolute;
+      z-index: -2;
+    }
+    img:last-of-type {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.9;
+    }
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    .logo {
+    }
+    .header-navigation {
+      .header-navigation-list {
+        display: flex;
+        .header-navigation-list__item a {
+          list-style: none;
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .header-icons a{
+      color: #fff;
+    }
+  }
+}
