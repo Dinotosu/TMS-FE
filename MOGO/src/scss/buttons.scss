@@ -1,0 +1,21 @@
+.button {
+  border: none;
+  background: none;
+  display: flex;
+}
+
+.button--learn {
+  margin: 0 auto;
+  margin-top: 118px;
+  @include button-learn-normal;
+}
+
+
+
+.button--learn:hover {
+  @include button-learn-hover;
+}
+
+.button--learn:active {
+  @include button-learn-active
+}

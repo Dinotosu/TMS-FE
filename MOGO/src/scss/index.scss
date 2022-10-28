@@ -1,4 +1,10 @@
+@import './_mixins';
+@import './_variables';
+
 @import './header-frame.scss';
 @import './reset.scss';
 @import './fonts.scss';
-@import './main.scss'
+@import './main.scss';
+@import './buttons.scss';
+@import './about.scss';
+@import './futures.scss'
