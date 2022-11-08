@@ -135,19 +135,13 @@
       padding-top: 77px;
       position: relative;
       .header-frame-content-text__subtitle {
-        font-family: "Kaushan";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 64px;
-        line-height: 93px;
+        @include h2;
+        color: #fff;
       }
       .header-frame-content-text__title {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 144px;
-        line-height: 176px;
-        text-transform: uppercase;
+        @include h1;
+        flex-direction: column;
+        color: #fff;
       }
     }
     .header-frame-content-text::after {

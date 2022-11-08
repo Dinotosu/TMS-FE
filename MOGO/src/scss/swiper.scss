@@ -1,0 +1,171 @@
+.swiper-section {
+  background-color: #f8f8f8;
+  height: fit-content;
+  .container {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          padding: 42px 0;
+          width: 80%;
+          .swiper-slide__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 170px;
+            height: 170px;
+            border: 2px solid #95e1d3;
+            margin-right: 30px;
+            img {
+              height: 50%;
+              width: 50%;
+            }
+          }
+          .face-image {
+            border: 0;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .swiper-text {
+            width: 70%;
+            p {
+              width: 100%;
+              font-family: "Raleway 500 italic";
+              font-style: italic;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 28px;
+              color: #a9afb1;
+            }
+            span {
+              @include h2;
+              font-size: 30px;
+              line-height: 44px;
+              margin-top: 21px;
+              position: relative;
+              justify-content: flex-start;
+              padding-left: 126px;
+            }
+            span::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              height: 0%;
+              width: 70px;
+              border: 2px solid #f38281;
+            }
+          }
+        }
+      }
+      .swiper-button-prev::after {
+        color: #c6cbcd;
+        font-size: 30px;
+      }
+      .swiper-button-next::after {
+        color: #c6cbcd;
+        font-size: 30px;
+      }
+      .swiper-pagination {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .swiper-section {
+    .container {
+      .swiper {
+        .swiper-wrapper {
+          .swiper-slide {
+            padding: 28px 0;
+            .swiper-slide__image {
+              width: 115px;
+              height: 115px;
+              margin-right: 37px;
+            }
+            .swiper-text {
+              p {
+                font-size: 18px;
+                line-height: 21px;
+              }
+              span {
+                font-size: 24px;
+                line-height: 35px;
+                margin-top: 14px;
+                padding-left: 94px;
+              }
+              span::before {
+                width: 47px;
+              }
+            }
+          }
+        }
+        .swiper-button-prev::after {
+          font-size: 21px;
+        }
+        .swiper-button-next::after {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-section {
+    padding-top: 29px;
+    padding-bottom: 0;
+    .container {
+      .swiper {
+        .swiper-wrapper {
+          height: 180px;
+          .swiper-slide {
+            padding: 0%;
+            .swiper-slide__image {
+              display: none;
+            }
+            .swiper-text {
+              width: 100%;
+              p {
+                font-size: 14px;
+                line-height: 16px;
+              }
+              span {
+                font-size: 18px;
+                line-height: 26px;
+                margin-top: 18px;
+              }
+              span::before {
+              }
+            }
+          }
+        }
+        .swiper-button-prev::after {
+          display: none;
+        }
+        .swiper-button-next::after {
+          display: none;
+        }
+        .swiper-pagination {
+          display: flex;
+          gap: 21px;
+          justify-content: center;
+          bottom: 15%;
+        }
+        .swiper-pagination-bullet {
+          border: 1px solid #c6cbcd;
+          font-size: 10px;
+          line-height: 12px;
+          background: none;
+        }
+        [aria-current]:not([aria-current="false"]) {
+          background-color: #c6cbcd;
+        }
+      }
+    }
+  }
+}

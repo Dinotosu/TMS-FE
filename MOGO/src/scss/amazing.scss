@@ -1,0 +1,133 @@
+.amazing {
+  padding-top: 42px;
+  padding-bottom: 91px;
+  .container {
+    .cards {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: space-between;
+      margin-top: 104px;
+      row-gap: 148px;
+      .card {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        min-width: 288px;
+        border: none;
+        justify-content: space-between;
+        .card-image {
+          width: 55px;
+          height: 55px;
+          margin-right: 37px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .card-text {
+          width: 70%;
+          .card-title {
+            @include h3;
+            justify-content: flex-start;
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 28px;
+          }
+          .card-info {
+            font-size: 18px;
+            line-height: 21px;
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 322px) {
+  .amazing {
+    padding-top: 29px;
+    padding-bottom: 58px;
+    .container {
+      .subtitle-frame {
+        font-size: 24px;
+        line-height: 35px;
+        padding: 16px 0;
+      }
+      .title-frame {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .title-frame::after {
+        top: calc(100% + 20px);
+      }
+      .cards {
+        margin-top: 94px;
+        row-gap: 65px;
+        .card {
+          .card-image {
+            width: 47px;
+            height: 47px;
+            margin-right: 31px;
+          }
+          .card-text {
+            .card-title {
+              font-size: 18px;
+              line-height: 21px;
+            }
+            .card-info {
+              font-size: 14px;
+              line-height: 16px;
+              padding: 18px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .amazing {
+    .container {
+      .subtitle-frame {
+        font-size: 24px;
+        line-height: 35px;
+        padding: 16px 0;
+      }
+      .title-frame {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .title-frame::after {
+        top: calc(100% + 20px);
+      }
+      .cards {
+        margin-top: 91px;
+        row-gap: 42px;
+        justify-content: center;
+        .card {
+          .card-image {
+            width: 47px;
+            height: 47px;
+            margin-right: 31px;
+          }
+          .card-text {
+            .card-title {
+              font-size: 18px;
+              line-height: 21px;
+            }
+            .card-info {
+              font-size: 14px;
+              line-height: 16px;
+              padding: 18px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

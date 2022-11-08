@@ -1,14 +1,130 @@
-html,body {
+html,
+body {
   font-family: "Raleway 400";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  ::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f5f5f5;
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 7px;
+    height: 80px;
+    background: #95e1d3;
+  }
 }
 
 .container {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.subtitle-frame {
+  @include h2;
+  font-size: 30px;
+  line-height: 44px;
+  padding: 18px 0;
+}
+.title-frame {
+  @include h1;
+  font-size: 36px;
+  line-height: 43px;
+  padding: 19px 0;
+  position: relative;
+  padding-bottom: 44px;
+  text-align: center;
+}
+.title-frame::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 0px;
+  border-top: 4px solid #f38281;
+  top: 100%;
+}
+
+.info-frame {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.card-title {
+  @include h3;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 28px;
+}
+.card-info {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px 0;
+}
+
+.cards {
+  width: 100%;
+  gap: 20px;
+  @include cards;
+  margin-top: 58px;
+  .card {
+    @include card;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .card--hover {
+      @include card--hover;
+      display: none;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      span {
+        @include h5;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 28px;
+        color: #fff;
+      }
+    }
+  }
+  .card:hover {
+    position: relative;
+    .card--hover {
+      display: flex;
+      opacity: 0.9;
+      z-index: 2;
+      top: -10px;
+      left: -10px;
+    }
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 319px) {
+  .subtitle-frame {
+    font-size: 24px;
+    line-height: 35px;
+    padding: 16px 0;
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 319px) {
+  .title-frame {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .info-frame {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 319px) {
+  .title-frame::after {
+    top: 100%;
+  }
 }

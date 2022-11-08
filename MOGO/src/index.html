@@ -8,6 +8,9 @@
   <!--   <link rel="stylesheet" href="./scss/animation.scss"> -->
   <script defer="" src="js/app.js"></script>
   <link rel="stylesheet" href="./scss/index.scss">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <title>MOGO</title>
 </head>
 
@@ -82,34 +85,39 @@
   </section>
   <section class="about" id="about">
     <div class="container">
-      <div class="about-info">
-        <h3 class="about__subtitle">What we do</h3>
-        <h2 class="about__title">story about us</h2>
-        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+      <div class="block-text">
+        <h3 class="subtitle-frame">What we do</h3>
+        <h2 class="title-frame">story about us</h2>
+        <p class="info-frame">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
           lacus. Eget sit ridiculus facilisi
           amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
       </div>
       <div class="cards">
-
         <div class="card">
-          <img src="./images/card_1.jpg" alt="">
-          <div class="card--hover">
-            <img src="./images/icon_add_hover.svg" alt="">
-            <span>Super team</span>
+          <div class="card-image">
+            <img src="./images/card_1.jpg" alt="">
+            <div class="card--hover super-team">
+              <img src="./images/icon_add_hover.svg" alt="">
+              <span>Super team</span>
+            </div>
           </div>
         </div>
         <div class="card">
-          <img src="./images/card_2.jpg" alt="">
-          <div class="card--hover">
-            <img src="./images/icon_add_hover.svg" alt="">
-            <span>Super team</span>
+          <div class="card-image">
+            <img src="./images/card_2.jpg" alt="">
+            <div class="card--hover super-team">
+              <img src="./images/icon_add_hover.svg" alt="">
+              <span>Super team</span>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img src="./images/card_3.jpg" alt="">
-          <div class="card--hover">
-            <img src="./images/icon_add_hover.svg" alt="">
-            <span>Super team</span>
+        <div class="card ">
+          <div class="card-image">
+            <img src="./images/card_3.jpg" alt="">
+            <div class="card--hover super-team">
+              <img src="./images/icon_add_hover.svg" alt="">
+              <span>Super team</span>
+            </div>
           </div>
         </div>
       </div>
@@ -156,15 +164,744 @@
       </div>
     </div>
   </div>
-  <!--   <section class="animation">
-    <div class="loader">
-      <div class="loader-item"></div>
-      <div class="loader-item"></div>
-      <div class="loader-item"></div>
-      <div class="loader-item"></div>
+  <section class="amazing" id="amazing">
+    <div class="container">
+      <h3 class="subtitle-frame"> We work with </h3>
+      <h2 class="title-frame">amazing services</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/amazing-card-1.svg" alt="photography">
+          </div>
+          <div class="card-text">
+            <p class="card-title">photography</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/amazing-card-2.svg" alt="web design">
+          </div>
+          <div class="card-text">
+            <p class="card-title">web design</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/amazing-card-3.svg" alt="creativity">
+          </div>
+          <div class="card-text">
+            <p class="card-title">creativity</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/amazing-card-4.svg" alt="seo">
+          </div>
+          <div class="card-text">
+            <p class="card-title">seo</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/amazing-card-5.svg" alt="css/html">
+          </div>
+          <div class="card-text">
+            <p class="card-title">css/html</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/amazing-card-6.svg" alt="digital">
+          </div>
+          <div class="card-text">
+            <p class="card-title">digital</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section> -->
+  </section>
+  <section class="devices">
+    <div class="devices__background">
+      <img src="./images/devices__background.jpg" alt="">
+    </div>
+    <div class="container">
+      <h3 class="subtitle-frame">
+        For all devices
+      </h3>
+      <h2 class="title-frame">
+        unique design
+      </h2>
+      <div class="devices-images">
+        <img src="./images/devices_pad.png" alt="">
+        <img src="./images/devices_phone.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="service">
+    <div class="container">
+      <div class="service-text">
+        <h3 class="subtitle-frame">Service</h3>
+        <h2 class="title-frame">what we do</h2>
+        <p class="info-frame">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus.
+          Eget sit ridiculus facilisi
+          amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+      </div>
+      <div class="service-content">
+        <div class="service-content__image">
+          <img src="./images/service-image.jpg" alt="">
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <div class="accordion-icon">
+                <img src="./images/service-accordion-1.svg" alt="">
+              </div>
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                photography
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim omnis delectus non labore ab ipsum
+                  magnam veritatis? Repellendus, animi est voluptatem perferendis porro cum vel molestias inventore
+                  magnam, corporis at. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae
+                  quasi dicta in ipsa alias nostrum quae nesciunt distinctio error. Repellendus minus accusantium eos
+                  voluptates doloremque soluta reprehenderit placeat quis. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Perferendis delectus enim cupiditate aut eius error commodi accusamus nesciunt
+                  deleniti ipsum? Beatae ipsum error natus suscipit voluptatibus aut praesentium laborum quia!</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <div class="accordion-icon">
+                <img src="./images/service-accordion-2.svg" alt="">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                creativity
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim omnis delectus non labore ab ipsum
+                  magnam veritatis?
+                  Repellendus, animi est voluptatem perferendis porro cum vel molestias inventore magnam, corporis at.
+                  Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Tenetur recusandae quasi dicta in ipsa alias nostrum quae
+                  nesciunt distinctio
+                  error. Repellendus minus accusantium eos voluptates doloremque soluta reprehenderit placeat quis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <div class="accordion-icon">
+                <img src="./images/service-accordion-3.svg" alt="">
+              </div>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                web design
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim omnis delectus non labore ab ipsum
+                  magnam veritatis?
+                  Repellendus, animi est voluptatem perferendis porro cum vel molestias inventore magnam, corporis at.
+                  Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Tenetur recusandae quasi dicta in ipsa alias nostrum quae
+                  nesciunt distinctio
+                  error. Repellendus minus accusantium eos voluptates doloremque soluta reprehenderit placeat quis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="swiper-section">
+    <div class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__image">
+              <img src="./images/swiper-slide__image.svg" alt="">
+            </div>
+            <div class="swiper-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                amet. Id aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <span>Jon Doe</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__image">
+              <img src="./images/swiper-slide__image.svg" alt="">
+            </div>
+            <div class="swiper-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                amet. Id
+                aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <span>Jon Doe</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__image">
+              <img src="./images/swiper-slide__image.svg" alt="">
+            </div>
+            <div class="swiper-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                amet. Id
+                aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <span>Jon Doe</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__image">
+              <img src="./images/swiper-slide__image.svg" alt="">
+            </div>
+            <div class="swiper-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                amet. Id
+                aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <span>Jon Doe</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section class="team" id="team">
+    <div class="container">
+      <div class="block-text">
+        <h3 class="subtitle-frame">Who we are</h3>
+        <h2 class="title-frame">meet our team</h2>
+        <p class="info-frame">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+          lacus. Eget sit ridiculus facilisi
+          amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/team-face-1.jpg" alt="">
+            <div class="card--hover" id="team">
+              <img src="./images/team-social-facebook.svg" alt="">
+              <img src="./images/team0social-twitter.svg" alt="">
+              <img src="./images/team-social-pinterest.svg" alt="">
+              <img src="./images/team-social-instagram.svg" alt="">
+            </div>
+          </div>
+          <p class="card-title">Kadin Dias</p>
+          <p class="card-info">founder, ceo</p>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/team-face-2.jpg" alt="">
+            <div class="card--hover" id="team">
+              <img src="./images/team-social-facebook.svg" alt="">
+              <img src="./images/team0social-twitter.svg" alt="">
+              <img src="./images/team-social-pinterest.svg" alt="">
+              <img src="./images/team-social-instagram.svg" alt="">
+            </div>
+          </div>
+          <p class="card-title">Zain Calzoni</p>
+          <p class="card-info">designer</p>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="./images/team-face-3.jpg" alt="">
+            <div class="card--hover" id="team">
+              <img src="./images/team-social-facebook.svg" alt="">
+              <img src="./images/team0social-twitter.svg" alt="">
+              <img src="./images/team-social-pinterest.svg" alt="">
+              <img src="./images/team-social-instagram.svg" alt="">
+            </div>
+          </div>
+          <p class="card-title">Charlie George</p>
+          <p class="card-info">photographer</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div class="futures logos-separator">
+    <div class="container">
+      <div class="futures-list">
+        <div class="futures-list-item">
+          <img src="./images/separation_bw-icon-1.svg" alt="">
+        </div>
+        <div class="futures-list-item">
+          <img src="./images/separation_bw-icon-2.svg" alt="">
+        </div>
+        <div class="futures-list-item">
+          <img src="./images/separation_bw-icon-3.svg" alt="">
+        </div>
+        <div class="futures-list-item">
+          <img src="./images/separation_bw-icon-4.svg" alt="">
+        </div>
+        <div class="futures-list-item">
+          <img src="./images/separation_bw-icon-5.svg" alt="">
+        </div>
+        <div class="futures-list-item">
+          <img src="./images/separation_bw-icon-6.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="works">
+    <div class="container">
+      <div class="block-text">
+        <h3 class="subtitle-frame">What we do</h3>
+        <h2 class="title-frame">some of our work</h2>
+        <p class="info-frame">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+          lacus. Eget sit ridiculus facilisi
+          amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+      </div>
+    </div>
+    <div class="works-images">
+      <div class="works-images-item card">
+        <img src="./images/works-1.jpg" alt="">
+        <div class="card--hover">
+          <img src="./images/works-hover-icon.svg" alt="">
+          <span class="card-title">creatively design</span>
+          <span class="card-text">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="works-images-item card">
+        <img src="./images/works-2.jpg" alt="">
+        <div class="card--hover">
+          <img src="./images/works-hover-icon.svg" alt="">
+          <span class="card-title">creatively design</span>
+          <span class="card-text">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="works-images-item card">
+        <img src="./images/works-3.jpg" alt="">
+        <div class="card--hover">
+          <img src="./images/works-hover-icon.svg" alt="">
+          <span class="card-title">creatively design</span>
+          <span class="card-text">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="works-images-item card">
+        <img src="./images/works-4.jpg" alt="">
+        <div class="card--hover">
+          <img src="./images/works-hover-icon.svg" alt="">
+          <span class="card-title">creatively design</span>
+          <span class="card-text">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="works-images-item card">
+        <img src="./images/works-5.jpg" alt="">
+        <div class="card--hover">
+          <img src="./images/works-hover-icon.svg" alt="">
+          <span class="card-title">creatively design</span>
+          <span class="card-text">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="works-images-item card">
+        <img src="./images/works-6.jpg" alt="">
+        <div class="card--hover">
+          <img src="./images/works-hover-icon.svg" alt="">
+          <span class="card-title">creatively design</span>
+          <span class="card-text">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="works-images-item card">
+        <img src="./images/works-7.jpg" alt="">
+        <div class="card--hover">
+          <img src="./images/works-hover-icon.svg" alt="">
+          <span class="card-title">creatively design</span>
+          <span class="card-text">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="swiper-section">
+    <div class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__image face-image">
+              <img src="./images/swiper-face-image.jpg" alt="">
+            </div>
+            <div class="swiper-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                amet. Id aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <span>James Philips</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__image face-image">
+              <img src="./images/swiper-face-image.jpg" alt="">
+            </div>
+            <div class="swiper-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                amet. Id
+                aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <span>James Philips</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__image face-image">
+              <img src="./images/swiper-face-image.jpg" alt="">
+            </div>
+            <div class="swiper-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                amet. Id
+                aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <span>James Philips</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide__image face-image">
+              <img src="./images/swiper-face-image.jpg" alt="">
+            </div>
+            <div class="swiper-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat
+                amet. Id
+                aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.</p>
+              <span>James Philips</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section class="clients">
+    <div class="clients-background">
+      <img src="./images/clients-background.jpg" alt="">
+    </div>
+    <div class="container">
+      <div class="block-text">
+        <h3 class="subtitle-frame">Happy Clients</h3>
+        <h2 class="title-frame">what people say</h2>
+        <p class="info-frame">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+          lacus. Eget sit ridiculus facilisi
+          amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+      </div>
+      <div class="clients-feedbacks">
+        <div class="clients-feedback">
+          <div class="clients-feedback__image">
+            <img src="./images/clients-1.png" alt="">
+          </div>
+          <div class="clients-feedback-text">
+            <p class="card-title">Phillip Culhane</p>
+            <p class="card-info">photographer</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+              vitae leo eget tincidunt duis
+              amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          </div>
+        </div>
+        <div class="clients-feedback">
+          <div class="clients-feedback__image">
+            <img src="./images/clients-2.png" alt="">
+          </div>
+          <div class="clients-feedback-text">
+            <p class="card-title">Paityn Press</p>
+            <p class="card-info">photographer</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+              vitae leo eget tincidunt duis
+              amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          </div>
+        </div>
+        <div class="clients-feedback">
+          <div class="clients-feedback__image">
+            <img src="./images/clients-3.png" alt="">
+          </div>
+          <div class="clients-feedback-text">
+            <p class="card-title">Dulce Gouse</p>
+            <p class="card-info">photographer</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+              vitae leo eget tincidunt duis
+              amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          </div>
+        </div>
+        <div class="clients-feedback">
+          <div class="clients-feedback__image">
+            <img src="./images/clients-4.png" alt="">
+          </div>
+          <div class="clients-feedback-text">
+            <p class="card-title">Zaire Schleifer</p>
+            <p class="card-info">photographer</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+              vitae leo eget tincidunt duis
+              amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="container">
+      <div class="block-text">
+        <h3 class="subtitle-frame">Our Stories</h3>
+        <h2 class="title-frame">Latest blog</h2>
+        <p class="info-frame">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis
+          lacus. Eget sit ridiculus facilisi
+          amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
+      </div>
+      <div class="blog-cards">
+        <div class="blog-card">
+          <div class="blog-card-image">
+            <img src="./images/blog-image.jpg" alt="">
+            <div class="blog-card-image__date">
+              <p>15</p>
+              <p>
+                jan</p>
+            </div>
+          </div>
+          <div class="blog-card-info">
+            <p class="card-title">Lorem ipsum dolor sit amet</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+              vitae leo eget tincidunt duis
+              amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+            <div class="blog-card-info-options">
+              <div class="blog-card-info__option">
+                <div class="blog-card-info__option-icon">
+                  <img src="./images/blog-card-info__views-icon.svg" alt="">
+                </div>
+                <span class="blog-card-info__option-sum">542</span>
+              </div>
+              <div class="blog-card-info__option">
+                <div class="blog-card-info__option-icon">
+                  <img src="./images/blog-card-info__comment-icon.svg" alt="">
+                </div>
+                <span class="blog-card-info__option-sum">17</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image">
+            <img src="./images/blog-image.jpg" alt="">
+            <div class="blog-card-image__date">
+              <p>15</p>
+              <p>
+                jan</p>
+            </div>
+          </div>
+          <div class="blog-card-info">
+            <p class="card-title">Lorem ipsum dolor sit amet</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+              vitae leo eget tincidunt duis
+              amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+            <div class="blog-card-info-options">
+              <div class="blog-card-info__option">
+                <div class="blog-card-info__option-icon">
+                  <img src="./images/blog-card-info__views-icon.svg" alt="">
+                </div>
+                <span class="blog-card-info__option-sum">542</span>
+              </div>
+              <div class="blog-card-info__option">
+                <div class="blog-card-info__option-icon">
+                  <img src="./images/blog-card-info__comment-icon.svg" alt="">
+                </div>
+                <span class="blog-card-info__option-sum">17</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card-image">
+            <img src="./images/blog-image.jpg" alt="">
+            <div class="blog-card-image__date">
+              <p>15</p>
+              <p>
+                jan</p>
+            </div>
+          </div>
+          <div class="blog-card-info">
+            <p class="card-title">Lorem ipsum dolor sit amet</p>
+            <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+              vitae leo eget tincidunt duis
+              amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+            <div class="blog-card-info-options">
+              <div class="blog-card-info__option">
+                <div class="blog-card-info__option-icon">
+                  <img src="./images/blog-card-info__views-icon.svg" alt="">
+                </div>
+                <span class="blog-card-info__option-sum">542</span>
+              </div>
+              <div class="blog-card-info__option">
+                <div class="blog-card-info__option-icon">
+                  <img src="./images/blog-card-info__comment-icon.svg" alt="">
+                </div>
+                <span class="blog-card-info__option-sum">17</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="latest-blog">
+    <div class="latest-blog__background">
+      <img src="./images/latest-blog-background.jpg" alt="">
+    </div>
+    <div class="container">
+      <div class="latest-blog-icon">
+        <img src="./images/latest-blog.svg" alt="">
+      </div>
+      <h2 class="latest-blog__title">Latest blog</h2>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="footer-follow">
+          <h2 class="footer-follow__title">MoGo</h2>
+          <p class="footer-follow__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis
+            proin varius vitae leo eget tincidunt duis
+            amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          <div class="footer-following">
+            <div class="footer-following-title">
+              <span>15 </span> <span> k </span> <span> followers</span>
+            </div>
+            <div class="footer-following-links">
+              <p class="footer-following-links-subtitle">Follow Us</p>
+              <ul class="footer-following-links-list">
+                <li class="footer-following-links-list__item"><a href="#">
+                    <img src="./images/footer-facebook.svg" alt="">
+                  </a></li>
+                <li class="footer-following-links-list__item"><a href="#">
+                    <img src="./images/footer-twitter.svg" alt="">
+                  </a></li>
+                <li class="footer-following-links-list__item"><a href="#">
+                    <img src="./images/footer-instagram.svg" alt="">
+                  </a></li>
+                <li class="footer-following-links-list__item"><a href="#">
+                    <img src="./images/footer-pinterest.svg" alt="">
+                  </a></li>
+                <li class="footer-following-links-list__item"><a href="#">
+                    <img src="./images/footer-linkedin.svg" alt="">
+                  </a></li>
+                <li class="footer-following-links-list__item"><a href="#">
+                    <img src="./images/footer-youtube.svg" alt="">
+                  </a></li>
+                <li class="footer-following-links-list__item"><a href="#">
+                    <img src="./images/footer-dribble.svg" alt="">
+                  </a></li>
+                <li class="footer-following-links-list__item"><a href="#">
+                    <img src="./images/footer-tiktok.svg" alt="">
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <form action="#" class="footer-form">
+            <input type="email" name="email" placeholder="Your Email">
+            <button class="button footer--button">subscribe</button>
+          </form>
+        </div>
+        <div class="footer-blog">
+          <p class="footer__title">blogs</p>
+          <div class="footer-blog-items">
+            <div class="footer-blog-item">
+              <div class="footer-blog-item__image">
+                <img src="./images/footer-blog-image-1.jpg" alt="">
+              </div>
+              <div class="footer-blog-item-info">
+                <p class="footer-blog-item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="footer-blog-item-info__date">jan.9.22.15</p>
+              </div>
+            </div>
+            <div class="footer-blog-item">
+              <div class="footer-blog-item__image">
+                <img src="./images/footer-blog-image-2.jpg" alt="">
+              </div>
+              <div class="footer-blog-item-info">
+                <p class="footer-blog-item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="footer-blog-item-info__date">jan.9.22.15</p>
+              </div>
+            </div>
+            <div class="footer-blog-item">
+              <div class="footer-blog-item__image">
+                <img src="./images/footer-blog-image-3.jpg" alt="">
+              </div>
+              <div class="footer-blog-item-info">
+                <p class="footer-blog-item-info__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="footer-blog-item-info__date">jan.9.22.15</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer-instagram">
+          <p class="footer__title">instagram</p>
+          <div class="footer-instagram-puzzle">
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-1.jpg" alt="">
+            </div>
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-2.jpg" alt="">
+            </div>
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-3.jpg" alt="">
+            </div>
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-4.jpg" alt="">
+            </div>
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-5.jpg" alt="">
+            </div>
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-6.jpg" alt="">
+            </div>
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-7.jpg" alt="">
+            </div>
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-8.jpg" alt="">
+            </div>
+            <div class="footer-instagram-puzzle__item">
+              <img src="./images/footer-insta-puzzle-9.jpg" alt="">
+            </div>
+          </div>
+          <div class="footer-instagram-link">
+            <a href="#" class="footer-instagram-link">see all photos</a>
+          </div>
+
+        </div>
+      </div>
+      <p class="footer-tag">
+        Copyright © 2021 mogo. All Rights Reserved
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/f33d2ed649.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>

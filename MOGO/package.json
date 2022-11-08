@@ -64,5 +64,7 @@
     "production": "webpack --config configuration/webpack.prod.config.js --mode=production"
   },
   "target": "web",
-  "dependencies": {}
+  "dependencies": {
+    "swiper": "^8.4.4"
+  }
 }

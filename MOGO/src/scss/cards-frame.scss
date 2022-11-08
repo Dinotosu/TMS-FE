@@ -1,0 +1,146 @@
+.about,
+.team {
+  padding: 84px 0;
+  .container {
+    .cards {
+      width: 100%;
+      @include cards;
+      margin-top: 58px;
+      .card {
+        @include card;
+        border: 0;
+        .card-image {
+          position: relative;
+          img {
+            width: 100%;
+          }
+          .card--hover {
+            flex-direction: row;
+            gap: 0;
+          }
+          .super-team {
+            flex-direction: column;
+            gap: 30px;
+          }
+        }
+        .card-title {
+          justify-content: center;
+          padding: 26px 0;
+          margin-bottom: 0;
+        }
+        .card-info {
+          text-transform: uppercase;
+          text-align: center;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 351px) {
+  .about,
+  .team {
+    padding: 28px 0;
+    .container {
+      .cards {
+        margin-top: 48px;
+        gap: 20px;
+        .card {
+          .card-image {
+            position: relative;
+            .card--hover {
+              flex-direction: row;
+              gap: 0;
+            }
+            .super-team {
+              flex-direction: column;
+              gap: 30px;
+            }
+          }
+          .card-title {
+            padding: 14px 0;
+            font-size: 18px;
+            line-height: 21px;
+          }
+          .card-info {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .about,
+  .team {
+    padding: 28px 0;
+    .container {
+      .cards {
+        margin-top: 48px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card {
+          min-width: 288px;
+          .card-image {
+            position: relative;
+            .card--hover {
+              height: 83px;
+              flex-direction: row;
+              justify-content: flex-start;
+              img {
+                margin-left: 17px;
+                width: 25px;
+              }
+              span {
+                font-size: 18px;
+                line-height: 21px;
+              }
+            }
+          }
+          .card-title {
+            padding: 14px 0;
+            font-size: 18px;
+            line-height: 21px;
+          }
+          .card-info {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+        .card:hover {
+          .card--hover {
+            display: flex;
+            opacity: 0.9;
+            z-index: 2;
+            top: auto;
+            left: 0;
+            bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .super-team {
+    flex-direction: row;
+  }
+  #team.card--hover {
+    background: none;
+    bottom: 0;
+    right: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0;
+    img {
+      margin-left: 0;
+      width: 42px;
+      height: 42px;
+    }
+  }
+}

@@ -1,0 +1,189 @@
+.service {
+  padding-top: 42px;
+  padding-bottom: 114px;
+  position: relative;
+  z-index: 1;
+  .container {
+    .service-text {
+      .title-frame {
+        padding-bottom: 44px;
+      }
+      .title-frame::after {
+        top: 100%;
+      }
+      .info-frame {
+        padding: 30px 0;
+        text-align: center;
+      }
+    }
+    .service-content {
+      display: flex;
+      gap: 30px;
+      .service-content__image {
+        width: 50%;
+        overflow: hidden;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .accordion {
+        width: 50%;
+        height: 100%;
+        .accordion-item {
+          width: 100%;
+          border-radius: 0;
+          .accordion-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid #c6cbcd;
+            .accordion-icon {
+              width: 36px;
+              padding: 28px 0;
+              padding-left: 21px;
+              padding-right: 42px;
+            }
+            button {
+              background-color: #fff;
+              @include h3;
+              font-size: 24px;
+              line-height: 28px;
+              text-transform: uppercase;
+              width: calc(100% - 99px);
+              text-align: left;
+              padding-left: 0;
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              overflow: scroll;
+              p {
+                height: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .service {
+    padding-top: 86px;
+    padding-bottom: 88px;
+    .container {
+      .service-text {
+        .title-frame {
+          padding-bottom: 40px;
+        }
+        .info-frame {
+          padding: 34px 0;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+      .service-content {
+        margin-top: 36px;
+        gap: 20px;
+        height: 409px;
+        .accordion {
+          .accordion-item {
+            .accordion-header {
+              .accordion-icon {
+                padding: 18px 0;
+                padding-left: 17px;
+                padding-right: 36px;
+                img {
+                  width: 30px;
+                }
+              }
+              button {
+                font-size: 18px;
+                line-height: 21px;
+                width: calc(100% - 85px);
+              }
+            }
+            .accordion-collapse {
+              .accordion-body {
+                padding: 10px;
+                p {
+                  height: 156px;
+                }
+              }
+            }
+            .accordion-collapse .show {
+              padding-bottom: 156px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .service {
+    padding-top: 52px;
+    padding-bottom: calc(156px + 31px);
+    .container {
+      .service-text {
+        .title-frame {
+          padding-bottom: 40px;
+        }
+        .info-frame {
+          padding: 20px 0;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+      .service-content {
+        margin-top: 29px;
+        flex-direction: column;
+        gap: 20px;
+        .service-content__image {
+          min-height: 142px;
+          width: 100%;
+          img {
+          }
+        }
+        .accordion {
+          min-height: 500px;
+          width: 100%;
+          .accordion-item {
+            .accordion-header {
+              .accordion-icon {
+                padding: 18px 0;
+                padding-left: 17px;
+                padding-right: 36px;
+                img {
+                  width: 30px;
+                }
+              }
+              button {
+                font-size: 18px;
+                line-height: 21px;
+                width: calc(100% - 85px);
+              }
+            }
+            .accordion-collapse {
+              .accordion-body {
+                padding: 10px;
+                p {
+                  height: 138px;
+                }
+              }
+            }
+          }
+          .accordion-item:not(:first-of-type) {
+            margin-top: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
