@@ -99,6 +99,14 @@
             font-size: 18px;
             line-height: 21px;
             padding: 17px 0;
+            color: #fff;
+            transition: 0.5s;
+          }
+          button:hover {
+            background: #87D2C4;
+          }
+          button:active {
+            background: #5C958A;
           }
         }
       }

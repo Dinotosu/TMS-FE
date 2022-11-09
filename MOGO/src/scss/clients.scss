@@ -70,12 +70,13 @@
             left: 0;
             width: 25%;
             height: 0;
-            border: 2px solid #f38281;
+            border-top: 4px solid $color-corral;
           }
           .card-text {
             font-size: 18px;
             line-height: 21px;
             padding: 20px 0;
+            margin-top: 22px;
           }
         }
       }

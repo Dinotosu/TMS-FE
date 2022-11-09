@@ -2,11 +2,12 @@
   border: none;
   background: none;
   display: flex;
+  transition: 0.5s;
 }
 
 .button--learn {
   margin: 0 auto;
-  margin-top: 118px;
+  margin-top: 74px;
   @include button-learn-normal;
 }
 
@@ -14,6 +15,7 @@
 
 .button--learn:hover {
   @include button-learn-hover;
+  transition: 0.5s;
 }
 
 .button--learn:active {

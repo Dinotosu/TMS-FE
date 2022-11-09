@@ -142,16 +142,17 @@
         @include h1;
         flex-direction: column;
         color: #fff;
+        padding-bottom: 44px;
       }
     }
     .header-frame-content-text::after {
       content: "";
       position: absolute;
-      top: calc(100% + 44px);
+      top: 100%;
       transform: translateX(-50%);
       width: 170px;
       height: 0px;
-      border: 2px solid #ffffff;
+      border-top: 4px solid #ffffff;
     }
     .header-frame-content-progress {
       display: flex;
@@ -218,14 +219,15 @@
         .header-frame-content-text__title {
           font-size: 96px;
           line-height: 117px;
+          padding-bottom: 29px;
         }
       }
       .button--learn {
-        margin-top: 80px;
+        margin-top: 50px;
         width: 317px;
       }
       .header-frame-content-text::after {
-        top: calc(100% + 30px);
+        top: 100%;
       }
       .header-frame-content-progress {
         margin-top: 80px;
@@ -253,7 +255,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header-frame {
     height: 574px;
     .header {
@@ -277,8 +279,11 @@
         width: 55px;
         align-items: center;
         justify-content: flex-end;
-        a:nth-child(3) {
+        a:nth-of-type(3) {
           margin: 0;
+        }
+        b:nth-child(3) {
+          
         }
         a {
           padding: 0px;
